@@ -1,0 +1,13 @@
+<!doctype html>
+<html ng-app="todoApp">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+    <script src="app.controller.js"></script>
+  </head>
+  <body>
+    <div ng-controller="TodoListController as todoList">
+      <h1> {{ todoList.text }} </h1> <br>
+      <button ng-click="todoList.showText()"> Show button </button>
+    </div>
+  </body>
+</html>
